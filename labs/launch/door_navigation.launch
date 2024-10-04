@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="speed_value" default="5.0" />
+  <node pkg="prob_rob_labs" type="door_navigation" name="door_navigation" output="screen">
+    <param name="speed_value" value="$(arg speed_value)" />
+  </node>
+</launch>
